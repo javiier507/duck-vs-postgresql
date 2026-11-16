@@ -1,0 +1,22 @@
+# Datos generados o importados, bases cargadas y evidencia de cada ejecución.
+# Se reconstruyen con ./ensayo.sh (generar/importar, cargar-*, medir, planes).
+# Los .gitkeep conservan las carpetas: ensayo.sh y scripts/limpiar.py cuentan con ellos.
+datos/*
+!datos/.gitkeep
+duckdb/*
+!duckdb/.gitkeep
+resultados/*
+!resultados/.gitkeep
+
+# Bloqueo de operación simultánea de ensayo.sh
+.ensayo.lock/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Sistema y editores
+.DS_Store
+.idea/
+.vscode/
